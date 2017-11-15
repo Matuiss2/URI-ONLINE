@@ -16,7 +16,7 @@ def main():
         l2 = int(data[1])
         r1 = int(data[2])
         r2 = int(data[3])
-        if not (l1 + l2 + r1 + r2) > 0:  # Se todos os valores forem 0, o programa fecha(seuguindo as instruções)
+        if not (l1 + l2 + r1 + r2) > 0:  # Se todos os valores forem 0, o programa fecha(seguindo as instruções)
             break
 # Saída
         if f(l1, l2, r1, r2):  # Chama e retorna o valor da função anterior, se for True entra aqui e imprime S
