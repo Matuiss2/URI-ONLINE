@@ -11,7 +11,7 @@ for j in range(loops):
         for i in texto:
             hop = ord(i) - codigo  # Pega o cod e checa o valor do símbolo covertido em ascii
             if hop < ord("A"):  # Se não corresponder à um símbolo dentro do alfabeto maiúsculo, vai entrar aqui
-                hop += 26  # E dar a volta para correponder a uma letra correta seguindo em regras do exercício
-            palavra += chr(hop)  # adiciona à variável palavra, as letras convertidas seguindo o código ascii
+                hop += 26  # E dar a volta para correponder a uma letra correta seguindo as regras do exercício
+            palavra += chr(hop)  # adiciona à variável palavra as letras convertidas seguindo o código ascii
 # Saída
     print(palavra)
