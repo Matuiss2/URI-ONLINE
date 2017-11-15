@@ -1,5 +1,5 @@
 # Entrada
-loops = int(input())  # Recebe o número de mensagens que po programa vai receber
+loops = int(input())  # Recebe o número de mensagens que o programa vai receber
 for l in range(loops):  # Faz iteração por determinado número de vezes(o número que estiver no loops)
     palavra = input()  # Recebe a mensagem a ser criptografada
     palavra1 = ""  # Armazena em uma variável a mensagem depois de primeira etapa da criptografia
