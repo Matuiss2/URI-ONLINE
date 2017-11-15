@@ -9,7 +9,7 @@ for i in range(T):
     G2 = float(numeros[3])  # Taxa de crescimento da 2° cidade em %
     anos = 0  # Valor inicial para os anos
 # Processo
-    while PA <= PB:  # O exercício diz alcançar e não ultrapassar portanto o condição é <=
+    while PA <= PB:  # O exercício diz alcançar e não ultrapassar portanto a condição é <=
         anos += 1  # Cada iteração aumenta o valor em 1 ano
         if anos > 100:  # Se durar mais de 1 século para alcançar a população quebra o loop
             break
