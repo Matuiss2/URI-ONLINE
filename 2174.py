@@ -5,4 +5,3 @@ for i in range(loops):
     lista1.append(pomekon)
 tamanho = len(set(lista1))
 print("Falta(m)", 151 - tamanho, "pomekon(s).")
-
