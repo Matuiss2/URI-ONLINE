@@ -1,3 +1,3 @@
 # URI ONLINE
 
-Exercicios aceitos pelo site urionlinejudge, em python, comentários em português
+Exercicios aceitos pelo site urionlinejudge, em python, comentÃ¡rios em portuguÃªs, se for copiar para o site delete os comentÃ¡rios primeiro
