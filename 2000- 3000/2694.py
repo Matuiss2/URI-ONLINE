@@ -11,5 +11,5 @@ for i in range(loops):
     '''
     split(), separa os números pelos espaços, e os tranforma em itens de uma lista
     map(int, lista), transforma todas as strings em números inteiros ex: "123" --- 123
-    sum(lista), soma todos os valores (se forem int) de uma lista
+    sum(lista), soma todos os valores de uma lista
     ''' 
