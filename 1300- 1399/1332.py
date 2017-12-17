@@ -1,5 +1,5 @@
 def checando_numero(palavra):
-    if len(palavra) == 5:  # 1 e 2 tem 3 de tamanho em inglês
+    if len(palavra) == 5:  # 1 e 2 tem 3 de tamanho em inglês, isso já elimina 1/3 dos casos rapidamente
         print(3)
     else:
         val = 0
@@ -7,7 +7,7 @@ def checando_numero(palavra):
         for x in range(len(palavra)):
             if palavra[x] == o[x]:  # valores equivalentes a one
                 val += 1
-        if val == 2 or val == 3: # se tiver dois ou 3 equivalentes é 1
+        if val == 2 or val == 3:  # se tiver dois ou 3 equivalentes é 1
             print(1)
         else:
             print(2)
