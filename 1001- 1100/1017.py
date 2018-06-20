@@ -1,4 +1,3 @@
-h = int(input())
-vm = int(input())
-total = h * vm
-print(format(total / 12, ".3f"))
+tempo_viagem = int(input())
+velocidade_media = int(input())
+print(format(tempo_viagem * velocidade_media / 12, ".3f"))
