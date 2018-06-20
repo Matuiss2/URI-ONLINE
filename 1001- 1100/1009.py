@@ -1,6 +1,4 @@
 nome = input()
-fixo = float(input())
-vendas = float(input())
-total = fixo + (vendas * 0.15)
-
-print("TOTAL = R$", format(total, ".2f"))
+salario_base = float(input())
+comissao = float(input()) * 0.15
+print("TOTAL = R$", format(salario_base + comissao, ".2f"))
