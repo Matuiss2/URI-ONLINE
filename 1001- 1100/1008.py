@@ -1,6 +1,5 @@
-n1 = input()
-hora = int(input())
-sal_h = float(input())
+numero = int(input())
+horas_trabalhadas = int(input())
+salario_hora = float(input())
 
-print("NUMBER = {}".format(n1))
-print("SALARY = U$", format(hora * sal_h, ".2f"))
+print("NUMBER = {}\nSALARY = U$ {}". format(numero, format(horas_trabalhadas * salario_hora, ".2f")))
