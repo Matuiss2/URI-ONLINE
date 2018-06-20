@@ -1,2 +1,1 @@
-km = int(input())
-print(km * 2, "minutos")
+print(int(input()) * 2, "minutos")
