@@ -1,8 +1,4 @@
-data = input().split()
-ordenado_data = sorted(map(float, data))  # tranforma os itens em float e ordena
-lado1 = ordenado_data[2]
-lado2 = ordenado_data[1]
-lado3 = ordenado_data[0]
+lado3, lado2, lado1 = sorted(map(float, input().split()))
 if lado1 >= lado2 + lado3:
     print("NAO FORMA TRIANGULO")
 else:
