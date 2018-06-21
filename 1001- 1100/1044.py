@@ -1,5 +1,5 @@
-data = input().split()
-if max(map(int, data)) % min(map(int, data)) == 0:  # tranforma em int pega o maior e vê se é divisível pelo menor
-    print("Sao Multiplos")
-else:
+numeros = list(map(int, input().split()))
+if max(numeros) % min(numeros):
     print("Nao sao Multiplos")
+else:
+    print("Sao Multiplos")
