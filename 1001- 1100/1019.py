@@ -1,6 +1,5 @@
-segundos = int(input())
-resto_s = segundos % 60
-minutos = segundos // 60
-resto_m = minutos % 60
-horas = minutos // 60
-print(str(horas) + ":" + str(resto_m) + ":" + str(resto_s))
+segundos_total = int(input())
+horas = segundos_total // 3600
+minutos = (segundos_total - (horas * 3600)) // 60
+segundos = (segundos_total - (horas * 3600)) - (minutos * 60)
+print("{}:{}:{}".format(horas, minutos, segundos))
