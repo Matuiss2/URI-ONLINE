@@ -1,19 +1,15 @@
 salario = float(input())
+aumentos = [0.15, 0.12, 0.1, 0.07, 0.04]
 if salario <= 400:
-    novo_salario = salario * 1.15
-    ep = "15 %"
+    posicao = 0
 elif salario <= 800:
-    novo_salario = salario * 1.12
-    ep = "12 %"
+    posicao = 1
 elif salario <= 1200:
-    novo_salario = salario * 1.1
-    ep = "10 %"
+    posicao = 2
 elif salario <= 2000:
-    novo_salario = salario * 1.07
-    ep = "7 %"
+    posicao = 3
 else:
-    novo_salario = salario * 1.04
-    ep = "4 %"
-print("Novo salario:", format(novo_salario, ".2f"))
-print("Reajuste ganho:", format(novo_salario - salario, ".2f"))
-print("Em percentual:", ep)
+    posicao = 4
+print("Novo salario: {}\nReajuste ganho: {}\nEm percentual: {} %".format(format(salario + salario * aumentos[posicao], ".2f"),
+                                                                        format(salario * aumentos[posicao], ".2f"),
+                                                                        int(aumentos[posicao] * 100)))
