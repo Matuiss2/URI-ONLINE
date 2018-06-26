@@ -1,19 +1,7 @@
-data = int(input())
-if data == 61:
-    print("Brasilia")
-elif data == 71:
-    print("Salvador")
-elif data == 11:
-    print("Sao Paulo")
-elif data == 21:
-    print("Rio de Janeiro")
-elif data == 32:
-    print("Juiz de Fora")
-elif data == 19:
-    print("Campinas")
-elif data == 27:
-    print("Vitoria")
-elif data == 31:
-    print("Belo Horizonte")
+ddd = int(input())
+tabela = {61: "Brasilia", 71: "Salvador", 11: "Sao Paulo", 21: "Rio de Janeiro",
+          32: "Juiz de Fora", 19: "Campinas", 27: "Vitoria", 33: "Belo Horizonte"}
+if ddd in tabela.keys():
+    print(tabela[ddd])
 else:
-    print("DDD nao cadastrado") 
+    print("DDD nao cadastrado")
