@@ -1,25 +1,4 @@
-data = int(input())
-if data == 1:
-    print("January")
-elif data == 2:
-    print("February")
-elif data == 3:
-    print("March")
-elif data == 4:
-    print("April")
-elif data == 5:
-    print("May")
-elif data == 6:
-    print("June")
-elif data == 7:
-    print("July")
-elif data == 8:
-    print("August")
-elif data == 9:
-    print("September")
-elif data == 10:
-    print("October")
-elif data == 11:
-    print("November")
-else:
-    print("December") 
+mes = int(input())
+tabela_meses = {1: "January", 2: "February", 3: "March", 4: "April", 5: "May", 6: "June", 7: "July", 8: "August",
+                9: "September", 10: "October", 11: "November", 12: "December"}
+print(tabela_meses[mes])
