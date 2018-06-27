@@ -1,9 +1,4 @@
-maior = 0
-posicao = 0
-for i in range(1, 101): # começa no 1 para mostrar corretamente a posição
-    data = int(input())
-    if data > maior:  # jeito "braçal", de pegar o maior número
-        maior = data
-        posicao = i  # Sempre que um "maior" cair aqui, a variável vai mudar
-print(maior)
-print(posicao)
+lista_numeros = []
+for i in range(100):
+    lista_numeros.append(int(input()))
+print("{}\n{}".format(max(lista_numeros), lista_numeros.index(max(lista_numeros)) + 1))
