@@ -1,22 +1,11 @@
-loops = int(input())
-total = 0  # total inicial de cobaias
-total_c = 0  # total inicial de coelhos
-total_r = 0  # total inicial de ratos
-total_s = 0  # total inicial de sapos
-for i in range(loops):
-    data = input().split()
-    qnt, tipo = int(data[0]), data[1]
-    total += qnt
-    if tipo == "C":
-        total_c += qnt
-    elif tipo == "R":
-        total_r += qnt
-    else:
-        total_s += qnt
-print("Total:", total, "cobaias")
-print("Total de coelhos:", total_c)
-print("Total de ratos:", total_r)
-print("Total de sapos:", total_s)
-print("Percentual de coelhos:", format(total_c / total * 100, ".2f"), "%")
-print("Percentual de ratos:", format(total_r / total * 100, ".2f"), "%")
-print("Percentual de sapos:", format(total_s / total * 100, ".2f"), "%")
+tabela_qntd = {"total": 0}
+for i in range(int(input())):
+    qntd, tipo = input().split()
+    tabela_qntd.setdefault(tipo, 0)
+    tabela_qntd[tipo] += int(qntd)
+    tabela_qntd["total"] += int(qntd)
+
+coelho, rato, sapo, total = tabela_qntd["C"], tabela_qntd["R"], tabela_qntd["S"], tabela_qntd["total"]
+print("Total: {} cobaias\nTotal de coelhos: {}\nTotal de ratos: {}\nTotal de sapos: {}\n"
+      "Percentual de coelhos: {} %\nPercentual de ratos: {} %\nPercentual de sapos: {} %".format(total, coelho, rato,
+       sapo, format(coelho / total * 100, ".2f"), format(rato / total * 100, ".2f"), format(sapo / total * 100, ".2f")))
