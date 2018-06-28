@@ -1,19 +1,14 @@
-con = 'n'
-while con == 'n':
-    cont, media, a = 0, 0, 3
-    while cont < 2:
-        X = float(input())
-        if 0 <= X <= 10:
-            cont += 1
-            media += X
-        else:
+encerramento = 0
+while encerramento != 2:
+    corretas, total_notas = 0, 0
+    while corretas < 2:
+        nota = float(input())
+        if nota < 0 or nota > 10:
             print("nota invalida")
-    print('media =', format(media / 2, ".2f"))
-    while a not in [1, 2]:
-        a = int(input("novo calculo (1-sim 2-nao)\n"))
-        if a == 1:
-            con = 'n'
-        elif a == 2:
-            con = 's'
         else:
-            a = int(input("novo calculo (1-sim 2-nao)\n"))
+            corretas += 1
+            total_notas += nota
+    print("media = {}".format(format(total_notas / 2, ".2f")))
+    encerramento = int(input("novo calculo (1-sim 2-nao)\n"))
+    while encerramento not in [1, 2]:
+        encerramento = int(input("novo calculo (1-sim 2-nao)\n"))
