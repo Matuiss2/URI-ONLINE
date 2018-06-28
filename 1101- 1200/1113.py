@@ -1,8 +1,8 @@
 while True:
-    data = input().split()
-    if int(data[0]) == int(data[1]):  # Se forem valores iguais vai fechar o programa
+    n1, n2 = map(int, input().split())
+    if n1 == n2:
         break
-    elif int(data[0]) > int(data[1]):
+    elif n1 > n2:
         print("Decrescente")
     else:
         print("Crescente")
