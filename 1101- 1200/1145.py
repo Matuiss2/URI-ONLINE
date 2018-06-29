@@ -1,19 +1,9 @@
-data = input().split(" ")
-x = int(data[0])
-y = int(data[1])
-cont = x
-lista = []
-
-
-def exibe_lista(l, char):
-    return str(char).join([str(i) for i in l])
-
-
-for j in range(1, y + 2):
-    if cont == 0:
-        print(exibe_lista(lista, " "))
-        lista = []
-        cont = x
-    if cont >= 1:
-        lista.append(j)
-        cont -= 1
+tamanho, maximo = map(int, input().split())
+inicial = 0
+while inicial < maximo:
+    lista_numeros = []
+    for i in range(tamanho):
+        inicial += 1
+        if inicial <= maximo:
+            lista_numeros.append(str(inicial))
+    print(" ".join(lista_numeros))
