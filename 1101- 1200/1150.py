@@ -1,14 +1,11 @@
-n1 = int(input())
-while True:
-    n2 = int(input())
-    if n2 > n1:
-        break
-soma = n1
-qntd = 1
-while True:
-    if soma > n2:
-        break
-    soma += n1 + qntd
-    qntd += 1
-
-print(qntd)
+numero1, numero2, contador = int(input()), int(input()), 0
+while numero2 <= numero1:
+    numero2 = int(input())
+total = numero1
+while total < numero2:
+    total += numero1 + contador
+    contador += 1
+if numero2 <= 0:
+    print(contador)
+else:
+    print(contador + 1)
