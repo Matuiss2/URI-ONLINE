@@ -1,9 +1,8 @@
 while True:
-    data = int(input())
-    total = 0
-    if data == 0:
+    numero = int(input())
+    if numero == 0:
         break
-    for i in range(data, data + 10):  # Inclúi o número + 4 pares(se for par) ou o número + 5 pares(se for impar)
-        if i % 2 == 0:
-            total += i
-    print(total) 
+    if numero % 2:
+        print((numero + 1) * 5 + 20)
+    else:
+        print(numero * 5 + 20)
