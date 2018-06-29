@@ -1,9 +1,6 @@
-idade = 1  # Valor para determinar idade como int não será contabilizado
-qnt = 0
-total_idade = 0
+idade, total, qntd = int(input()), 0, 0
 while idade > 0:
+    total += idade
+    qntd += 1
     idade = int(input())
-    if idade > 0:  # Valor de fechamento(negativos) não serão contabilizados
-        total_idade += idade
-        qnt += 1
-print(format(total_idade / qnt, ".2f"))
+print(format(total / qntd, ".2f"))
