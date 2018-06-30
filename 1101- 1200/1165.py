@@ -1,12 +1,11 @@
-loops = int(input())
-for i in range(loops):
+for i in range(int(input())):
     numero = int(input())
-    if numero in range(0, 2):
-        print(numero, "nao eh primo")  # 0 e 1 não são primos
+    if numero in [0, 1]:
+        print(numero, "nao eh primo")
+        continue
+    for divisores in range(2, numero // 2 + 1):
+        if numero % divisores == 0:
+            print(numero, "nao eh primo")
+            break
     else:
-        for j in range(2, numero):  # excluí o próprio número e o 1
-            if numero % j == 0:
-                print(numero, "nao eh primo")
-                break
-        else:  # se não for quebrado pelo break vai entrar aqui
-            print(numero, "eh primo")
+        print(numero, "eh primo")
