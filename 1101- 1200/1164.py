@@ -1,11 +1,9 @@
-loops = int(input())
-for i in range(loops):
-    soma = 0
-    data = int(input())
-    for j in range(1, data):
-        if data % j == 0:
-            soma += j
-    if soma == data:
-        print(data, "eh perfeito")
+for i in range(int(input())):
+    numero, total = int(input()), 0
+    for divisores in range(1, numero):
+        if numero % divisores == 0:
+            total += divisores
+    if total == numero:
+        print(numero, "eh perfeito")
     else:
-        print(data, "nao eh perfeito")
+        print(numero, "nao eh perfeito")
